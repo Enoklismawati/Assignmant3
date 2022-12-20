@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/casesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cases in the world"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/casesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_below="@+id/casesTextView"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_500"/>
+
+    <TextView
+        android:id="@+id/recoveredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Recovered in the world"
+        android:textSize="30dp"
+        android:layout_below="@+id/casesCount"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/recoveredCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_below="@+id/recoveredTextView"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple_500"/>
+
+    <TextView
+        android:id="@+id/deathsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Deaths in the world"
+        android:layout_below="@id/recoveredCount"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/deathsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_below="@id/deathsTextView"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
